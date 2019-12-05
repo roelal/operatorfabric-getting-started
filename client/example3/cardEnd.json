@@ -1,0 +1,20 @@
+
+{
+	"publisher" : "alert-publisher",
+	"publisherVersion" : "1",
+	"processId" : "alert1",
+	"recipient" : {
+				"type" : "GROUP",
+				"identity" : "TSO1"
+			},
+	"severity" : "NOTIFICATION",
+	"startDate" : 1553186770681,
+	"summary" : {
+		"key" : "criticalSituation-end.summary"
+	},
+	"title" : {
+		"key" : "criticalSituation-end.title"
+	},
+	"data":{"instruction":"Go in normal operation"},
+	"details":[{"title":{"key":"criticalSituation-end.title"}, "templateName":"endCriticalSituationTemplate"}]
+}

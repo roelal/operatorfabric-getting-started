@@ -1,0 +1,27 @@
+{
+	"publisher" : "scheduledMaintenance-publisher",
+	"publisherVersion" : "1",
+	"process"  :"maintenanceProcess",
+	"processId" : "maintenance-1",
+	"state": "planned",
+	"recipient" : {
+				"type" : "GROUP",
+				"identity" : "TSO1"
+			},
+	"severity" : "NOTIFICATION",
+	"startDate" : 1553186770681,
+	"summary" : {"key" : "maintenanceProcess.summary"},
+	"title" : {"key" : "maintenanceProcess.title"},
+	"data" : {
+		"operationDescription":"Maintenance operation on the International France England (IFA) Hight Voltage line ",
+		"operationResponsible":"RTE",
+		"contactPoint":"By Phone : +33 1 23 45 67 89 ",
+		"operationStartingTime":"Wed 11 dec 2019 8pm",
+		"operationEndTime":"Thu 12 dec 2019 10am", 
+		"comment":"Operation has no impact on service"
+		},
+	"timeSpans" : [
+        {"start" : 1576090859000},
+        {"start" :  1576141259000}
+    	]
+}

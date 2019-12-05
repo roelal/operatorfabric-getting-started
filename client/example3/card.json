@@ -1,0 +1,16 @@
+{
+	"publisher" : "alert-publisher",
+	"publisherVersion" : "1",
+	"process"  :"criticalSituation",
+	"processId" : "alert1",
+	"state": "criticalSituation-begin",
+	"recipient" : {
+				"type" : "GROUP",
+				"identity" : "TSO1"
+			},
+	"severity" : "ALARM",
+	"startDate" : 1553186770681,
+	"summary" : {"key" : "criticalSituation-begin.summary"},
+	"title" : {"key" : "criticalSituation-begin.title"},
+	"data" : {"instruction":"Critical situation on the grid : stop immediatly all maintenance on the grid"}
+}

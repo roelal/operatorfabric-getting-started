@@ -1,0 +1,19 @@
+{
+	"publisher" : "alert-publisher",
+	"publisherVersion" : "1",
+	"processId" : "alert1",
+	"recipient" : {
+				"type" : "GROUP",
+				"identity" : "TSO1"
+			},
+	"severity" : "ALARM",
+	"startDate" : 1553186770681,
+	"summary" : {
+		"key" : "criticalSituation-update.summary"
+	},
+	"title" : {
+		"key" : "criticalSituation-update.title"
+	},
+	"data":{"instruction":"Situation is evolving positively but maintenance on the grid is still prohibed"},
+	"details":[{"title":{"key":"criticalSituation-update.title"}, "templateName":"criticalSituationTemplate"}]
+}

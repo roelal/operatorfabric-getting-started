@@ -1,0 +1,19 @@
+{
+	"name":"scheduledMaintenance-publisher",
+	"version":"1",
+	"templates":["template"],
+	"csses":["style"],
+	"processes" : {
+		"maintenanceProcess" : {
+			"states":{
+				"planned" : {
+					"details" : [{
+						"title" : { "key" : "maintenanceProcess.title"},
+						"templateName" : "template",
+						"styles" : [ "style" ]
+					}]
+				}
+			}
+		}
+	}
+}

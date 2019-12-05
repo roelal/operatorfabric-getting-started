@@ -1,0 +1,33 @@
+{
+	"name":"alert-publisher",
+	"version":"1",
+	"templates":["criticalSituationTemplate","endCriticalSituationTemplate"],
+	"csses":["style"],
+	"processes" : {
+		"criticalSituation" : {
+			"states":{
+				"criticalSituation-begin" : {
+					"details" : [{
+						"title" : { "key" : "criticalSituation-begin.title"},
+						"templateName" : "criticalSituationTemplate",
+						"styles" : [ "style" ]
+					}]
+				},
+				"criticalSituation-update" : {
+					"details" : [{
+						"title" : { "key" : "criticalSituation-update.title"},
+						"templateName" : "criticalSituationTemplate",
+						"styles" : [ "style" ]
+					}]
+				},
+				"criticalSituation-end" : {
+					"details" : [{
+						"title" : { "key" : "criticalSituation-end.title"},
+						"templateName" : "endCriticalSituationTemplate",
+						"styles" : [ "style" ]
+					}]
+				}
+			}
+		}
+	}
+}

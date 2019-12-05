@@ -1,0 +1,27 @@
+{
+	"publisher" : "scheduledMaintenance-publisher",
+	"publisherVersion" : "1",
+	"process"  :"maintenanceProcess",
+	"processId" : "maintenance-2",
+	"state": "planned",
+	"recipient" : {
+				"type" : "GROUP",
+				"identity" : "TSO1"
+			},
+	"severity" : "ALARM",
+	"startDate" : 1553186770681,
+	"summary" : {"key" : "maintenanceProcess.summary"},
+	"title" : {"key" : "maintenanceProcess.title"},
+	"data" : {
+		"operationDescription":"Urgent maintenance operation on Bugey Nuclear Power Plant",
+		"operationResponsible":"EDF",
+		"contactPoint":"By Phone : +33 1 23 42 22 72 ",
+		"operationStartingTime":"Wed 11 dec 2019 10pm",
+		"operationEndTime":"Thu 13 dec 2019 8am", 
+		"comment":"Operation will stop production of the Power Plant"
+		},
+	"timeSpans" : [
+        {"start" : 1576101659000},
+        {"start" :  1576220459000}
+    	]
+}
