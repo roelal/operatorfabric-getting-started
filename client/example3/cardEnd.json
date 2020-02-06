@@ -7,7 +7,7 @@
 				"type" : "GROUP",
 				"identity" : "TSO1"
 			},
-	"severity" : "NOTIFICATION",
+	"severity" : "INFORMATION",
 	"startDate" : 1553186770681,
 	"summary" : {
 		"key" : "criticalSituation-end.summary"

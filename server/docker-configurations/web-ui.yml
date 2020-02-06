@@ -11,6 +11,14 @@ operatorfabric:
     card:
       time:
         display: BUSINESS
+    timeline:
+      domains:
+        - "TR"
+        - "J"
+        - "7D"
+        - "W"
+        - "M"
+        - "Y"
   archive:
     filters:
       publisher.list:
@@ -46,3 +54,5 @@ operatorfabric:
   - en
   settings:
     locale: en
+    infos:
+      description: true
