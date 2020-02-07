@@ -27,7 +27,7 @@ services:
   config:
     depends_on:
      - rabbitmq
-    image: "lfeoperatorfabric/of-configuration-cloud-service:0.15.1.SNAPSHOT"
+    image: "lfeoperatorfabric/of-configuration-cloud-service:snapshot"
     user: ${USER_ID}:${USER_GID}
     ports:
      - "2000:8080"
@@ -46,7 +46,7 @@ services:
   registry:
     depends_on:
      - config
-    image: "lfeoperatorfabric/of-registry-cloud-service:0.15.1.SNAPSHOT"
+    image: "lfeoperatorfabric/of-registry-cloud-service:snapshot"
     user: ${USER_ID}:${USER_GID}
     ports:
      - "2001:8080"
@@ -59,7 +59,7 @@ services:
   client_gateway:
     depends_on:
      - registry
-    image: "lfeoperatorfabric/of-client-gateway-cloud-service:0.15.1.SNAPSHOT"
+    image: "lfeoperatorfabric/of-client-gateway-cloud-service:snapshot"
     user: ${USER_ID}:${USER_GID}
     ports:
      - "2002:8080"
@@ -71,7 +71,7 @@ services:
   users:
     depends_on:
      - registry
-    image: "lfeoperatorfabric/of-users-business-service:0.15.1.SNAPSHOT"
+    image: "lfeoperatorfabric/of-users-business-service:snapshot"
     user: ${USER_ID}:${USER_GID}
     ports:
      - "2103:8080"
@@ -83,7 +83,7 @@ services:
   thirds:
     depends_on:
      - registry
-    image: "lfeoperatorfabric/of-thirds-business-service:0.15.1.SNAPSHOT"
+    image: "lfeoperatorfabric/of-thirds-business-service:snapshot"
     user: ${USER_ID}:${USER_GID}
     ports:
      - "2100:8080"
@@ -97,7 +97,7 @@ services:
   time:
     depends_on:
      - registry
-    image: "lfeoperatorfabric/of-time-business-service:0.15.1.SNAPSHOT"
+    image: "lfeoperatorfabric/of-time-business-service:snapshot"
     user: ${USER_ID}:${USER_GID}
     ports:
      - "2101:8080"
@@ -109,7 +109,7 @@ services:
   cards-publication:
     depends_on:
      - registry
-    image: "lfeoperatorfabric/of-cards-publication-business-service:0.15.1.SNAPSHOT"
+    image: "lfeoperatorfabric/of-cards-publication-business-service:snapshot"
     user: ${USER_ID}:${USER_GID}
     ports:
      - "2102:8080"
@@ -121,7 +121,7 @@ services:
   cards-consultation:
     depends_on:
      - registry
-    image: "lfeoperatorfabric/of-cards-consultation-business-service:0.15.1.SNAPSHOT"
+    image: "lfeoperatorfabric/of-cards-consultation-business-service:snapshot"
     user: ${USER_ID}:${USER_GID}
     ports:
      - "2104:8080"
@@ -133,7 +133,7 @@ services:
   actions:
     depends_on:
     - registry
-    image: "lfeoperatorfabric/of-actions-business-service:0.15.1.SNAPSHOT"
+    image: "lfeoperatorfabric/of-actions-business-service:snapshot"
     user: ${USER_ID}:${USER_GID}
     ports:
     - "2105:8080"
@@ -145,7 +145,7 @@ services:
   web-ui:
     depends_on:
     - registry
-    image: "lfeoperatorfabric/of-web-ui:0.15.1.SNAPSHOT"
+    image: "lfeoperatorfabric/of-web-ui:snapshot"
     user: ${USER_ID}:${USER_GID}
     ports:
     - "2200:8080"
