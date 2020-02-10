@@ -8,7 +8,7 @@
 				"type" : "GROUP",
 				"identity" : "TSO1"
 			},
-	"severity" : "NOTIFICATION",
+	"severity" : "INFORMATION",
 	"startDate" : 1553186770681,
 	"summary" : {"key" : "defaultProcess.summary"},
 	"title" : {"key" : "defaultProcess.title"},
