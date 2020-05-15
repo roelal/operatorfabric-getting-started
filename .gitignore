@@ -1,0 +1,4 @@
+*.env
+server/thirds-storage/*
+.idea/*
+*.tar.gz
