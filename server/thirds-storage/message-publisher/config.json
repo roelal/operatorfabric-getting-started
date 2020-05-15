@@ -1,6 +1,6 @@
 {
 	"name":"message-publisher",
-	"version":"1",
+	"version":"2",
 	"templates":["template"],
 	"csses":["style"],
 	"processes" : {
