@@ -4,6 +4,7 @@ operatorfabric:
   security:
     provider-url: http://localhost:89
     provider-realm: dev
+    logout-url: ${operatorfabric.security.provider-url}/auth/realms/${operatorfabric.security.provider-realm}/protocol/openid-connect/logout?redirect_uri=http://localhost:2002/ui/
     oauth2:
       flow:
         mode: CODE
@@ -59,11 +60,15 @@ operatorfabric:
     - Europe/Athens
     - Pacific/Samoa
   i18n.supported.locales:
-    - fr
     - en
+    - fr
   settings:
     locale: en
+    nightDayMode: true
     infos:
       description: true
-  time:
-    pulse: 5000
+    about:
+      keycloack:
+        name: Keycloak
+        version: 6.0.1
+        rank: 1
