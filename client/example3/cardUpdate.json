@@ -1,11 +1,13 @@
 {
 	"publisher" : "alert-publisher",
 	"publisherVersion" : "1",
+	"process"  :"criticalSituation",
 	"processId" : "alert1",
 	"recipient" : {
 				"type" : "GROUP",
 				"identity" : "TSO1"
 			},
+	"state" : "criticalSituation-update",
 	"severity" : "ALARM",
 	"startDate" : 1553186770681,
 	"summary" : {
