@@ -28,7 +28,7 @@ services:
     - "90:9990"
   users:
     container_name: users
-    image: "lfeoperatorfabric/of-users-business-service:1.4.0.RELEASE"
+    image: "lfeoperatorfabric/of-users-business-service:SNAPSHOT"
     user: ${USER_ID}:${USER_GID}
     ports:
      - "2103:8080"
@@ -38,10 +38,12 @@ services:
     - REGISTRY_PORT=8080
     - DEPENDS_ON=CONFIG
     volumes:
-      - "./certificates:/certificates_to_add"
-  thirds:
-    container_name: thirds
-    image: "lfeoperatorfabric/of-thirds-business-service:1.4.0.RELEASE"
+      - "../certificates:/certificates_to_add"
+      - "./docker-configurations/users.yml:/config/application.yml"
+      - "./docker-configurations/common.yml:/config/common-docker.yml"
+  businessconfig:
+    container_name: businessconfig
+    image: "lfeoperatorfabric/of-businessconfig-business-service:SNAPSHOT"
     depends_on:
       - mongodb
     user: ${USER_ID}:${USER_GID}
@@ -53,11 +55,13 @@ services:
     - REGISTRY_PORT=8080
     - DEPENDS_ON=CONFIG
     volumes:
-     - "./certificates:/certificates_to_add"
-     - "./thirds-storage:/thirds-storage"
+      - "../certificates:/certificates_to_add"
+      - "./businessconfig-storage:/businessconfig-storage"
+      - "./docker-configurations/common.yml:/config/common-docker.yml"
+      - "./docker-configurations/businessconfig.yml:/config/application-docker.yml"
   cards-publication:
     container_name: cards-publication
-    image: "lfeoperatorfabric/of-cards-publication-business-service:1.4.0.RELEASE"
+    image: "lfeoperatorfabric/of-cards-publication-business-service:SNAPSHOT"
     depends_on:
       - mongodb
     user: ${USER_ID}:${USER_GID}
@@ -69,10 +73,12 @@ services:
     - REGISTRY_PORT=8080
     - DEPENDS_ON=CONFIG
     volumes:
-      - "./certificates:/certificates_to_add"
+      - "../certificates:/certificates_to_add"
+      - "./docker-configurations/common.yml:/config/common-docker.yml"
+      - "./docker-configurations/cards-publication.yml:/config/application-docker.yml"
   cards-consultation:
     container_name: cards-consultation
-    image: "lfeoperatorfabric/of-cards-consultation-business-service:1.4.0.RELEASE"
+    image: "lfeoperatorfabric/of-cards-consultation-business-service:SNAPSHOT"
     user: ${USER_ID}:${USER_GID}
     ports:
      - "2104:8080"
@@ -82,14 +88,16 @@ services:
     - REGISTRY_PORT=8080
     - DEPENDS_ON=CONFIG
     volumes:
-      - "./certificates:/certificates_to_add"
+      - "../certificates:/certificates_to_add"
+      - "./docker-configurations/common.yml:/config/common-docker.yml"
+      - "./docker-configurations/cards-consultation.yml:/config/application-docker.yml"
   web-ui:
-    image: "lfeoperatorfabric/of-web-ui:1.4.0.RELEASE"
+    image: "lfeoperatorfabric/of-web-ui:SNAPSHOT"
     ports:
     - "2002:80"
     depends_on:
       - users
-      - thirds
+      - businessconfig
       - cards-consultation
     volumes:
       - "./web-ui.json:/usr/share/nginx/html/opfab/web-ui.json"

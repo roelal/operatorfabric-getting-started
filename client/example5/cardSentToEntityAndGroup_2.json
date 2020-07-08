@@ -1,16 +1,17 @@
 {
 	"publisher" : "message-publisher",
 	"processVersion" : "1",
+	"entityRecipients" : ["ENTITY1"],
 	"process"  :"defaultProcess",
-	"processInstanceId" : "hello-world-1",
+	"processInstanceId" : "cardExample5_2",
 	"state": "messageState",
 	"recipient" : {
-				"type" : "GROUP",
-				"identity" : "TSO1"
-			},
+		"type" : "GROUP",
+		"identity" : "TSO2"
+	},
 	"severity" : "INFORMATION",
 	"startDate" : 1553186770681,
 	"summary" : {"key" : "defaultProcess.summary"},
 	"title" : {"key" : "defaultProcess.title"},
-	"data" : {"message":"Hello World !!! That's my first message"}
+	"data" : {"message" : "Hello World !!! Here is a message for ENTITY1 and group TSO2 - process/state in tso1-operator perimeter "}
 }

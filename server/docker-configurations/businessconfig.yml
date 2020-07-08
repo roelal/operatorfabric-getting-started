@@ -1,8 +1,12 @@
 
 spring:
   application:
-    name: cards-consultation
+    name: businessconfig
 
+
+operatorfabric.businessconfig:
+  storage:
+    path: "/businessconfig-storage"
 
 #here we put urls for all feign clients
 users:

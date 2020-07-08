@@ -1,8 +1,8 @@
 {
 	"publisher" : "scheduledMaintenance-publisher",
-	"publisherVersion" : "1",
+	"processVersion" : "1",
 	"process"  :"maintenanceProcess",
-	"processId" : "maintenance-1",
+	"processInstanceId" : "maintenance-1",
 	"state": "planned",
 	"recipient" : {
 				"type" : "GROUP",

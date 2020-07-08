@@ -1,8 +1,8 @@
 {
 	"publisher" : "alert-publisher",
-	"publisherVersion" : "1",
+	"processVersion" : "1",
 	"process"  :"criticalSituation",
-	"processId" : "alert1",
+	"processInstanceId" : "alert1",
 	"recipient" : {
 				"type" : "GROUP",
 				"identity" : "TSO1"

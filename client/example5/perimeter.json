@@ -1,0 +1,10 @@
+{
+	"id" : "getting-startedPerimeter",
+	"process" : "defaultProcess",
+	"stateRights" : [
+		{
+			"state" : "messageState",
+			"right" : "Receive"
+		}
+	]
+}

@@ -1,16 +1,13 @@
 {
 	"publisher" : "message-publisher",
-	"processVersion" : "2",
+	"processVersion" : "1",
+	"entityRecipients" : ["ENTITY1"],
 	"process"  :"defaultProcess",
-	"processInstanceId" : "hello-world-1",
+	"processInstanceId" : "cardExample5",
 	"state": "messageState",
-	"recipient" : {
-				"type" : "GROUP",
-				"identity" : "TSO1"
-			},
 	"severity" : "INFORMATION",
 	"startDate" : 1553186770681,
 	"summary" : {"key" : "defaultProcess.summary"},
 	"title" : {"key" : "defaultProcess.title"},
-	"data" : {"message":"Hello world in new version"}
+	"data" : {"message" : "Hello World !!! Here is a message for ENTITY1 "}
 }
