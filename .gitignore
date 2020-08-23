@@ -1,4 +1,4 @@
 *.env
-server/thirds-storage/*
+server/businessconfig-storage/*
 .idea/*
 *.tar.gz
