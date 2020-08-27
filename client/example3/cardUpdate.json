@@ -16,6 +16,5 @@
 	"title" : {
 		"key" : "criticalSituation-update.title"
 	},
-	"data":{"instruction":"Situation is evolving positively but maintenance on the grid is still prohibited"},
-	"details":[{"title":{"key":"criticalSituation-update.title"}, "templateName":"criticalSituationTemplate"}]
+	"data":{"instruction":"Situation is evolving positively but maintenance on the grid is still prohibited"}
 }

@@ -17,6 +17,5 @@
 	"title" : {
 		"key" : "criticalSituation-end.title"
 	},
-	"data":{"instruction":"Go in normal operation"},
-	"details":[{"title":{"key":"criticalSituation-end.title"}, "templateName":"endCriticalSituationTemplate"}]
+	"data":{"instruction":"Go in normal operation"}
 }
