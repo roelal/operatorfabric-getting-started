@@ -9,13 +9,15 @@
 				"title" : { "key" : "defaultProcess.title"},
 				"templateName" : "template",
 				"styles" : [ "style" ]
-			}]
+			}],
+			"acknowledgementAllowed": true
 		},
 		"messageState2" : {
 			"details" : [{
 				"title" : { "key" : "defaultProcess.title"},
 				"templateName" : "template",
-				"styles" : [ "style" ]
+				"styles" : [ "style" ],
+				"acknowledgementAllowed": true
 			}]
 		}
 	}

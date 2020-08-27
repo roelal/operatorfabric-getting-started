@@ -9,7 +9,8 @@
 				"title" : { "key" : "defaultProcess.title"},
 				"templateName" : "template",
 				"styles" : [ "style" ]
-			}]
+			}],
+			"acknowledgementAllowed": true
 		}
 	}
 }

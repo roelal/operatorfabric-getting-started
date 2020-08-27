@@ -9,7 +9,8 @@
 				"title" : { "key" : "maintenanceProcess.title"},
 				"templateName" : "template",
 				"styles" : [ "style" ]
-			}]
+			}],
+			"acknowledgementAllowed": true
 		}
 	}
 }
