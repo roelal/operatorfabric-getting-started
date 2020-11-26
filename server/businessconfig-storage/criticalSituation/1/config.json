@@ -1,31 +1,23 @@
 {
 	"id":"criticalSituation",
 	"version":"1",
-	"templates":["criticalSituationTemplate","endCriticalSituationTemplate"],
-	"csses":["style"],
 	"states":{
 		"criticalSituation-begin" : {
-			"details" : [{
-				"title" : { "key" : "criticalSituation-begin.title"},
-				"templateName" : "criticalSituationTemplate",
-				"styles" : [ "style" ]
-			}],
+			"detailTitle" : { "key" : "criticalSituation-begin.title"},
+			"templateName" : "criticalSituationTemplate",
+			"styles" : [ "style" ],
 			"acknowledgementAllowed": true
 		},
 		"criticalSituation-update" : {
-			"details" : [{
-				"title" : { "key" : "criticalSituation-update.title"},
-				"templateName" : "criticalSituationTemplate",
-				"styles" : [ "style" ]
-			}],
+			"detailTitle" : { "key" : "criticalSituation-update.title"},
+			"templateName" : "criticalSituationTemplate",
+			"styles" : [ "style" ],
 			"acknowledgementAllowed": true
 		},
 		"criticalSituation-end" : {
-			"details" : [{
-				"title" : { "key" : "criticalSituation-end.title"},
-				"templateName" : "endCriticalSituationTemplate",
-				"styles" : [ "style" ]
-			}],
+			"detailTitle" : { "key" : "criticalSituation-end.title"},
+			"templateName" : "endCriticalSituationTemplate",
+			"styles" : [ "style" ],
 			"acknowledgementAllowed": true
 		}
 	}

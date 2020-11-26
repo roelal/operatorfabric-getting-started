@@ -1,16 +1,19 @@
 {
 	"id":"defaultProcess",
-	"version":"2",
-	"templates":["template"],
-	"csses":["style"],
+	"version":"1",
 	"states":{
 		"messageState" : {
-			"details" : [{
-				"title" : { "key" : "defaultProcess.title"},
-				"templateName" : "template",
-				"styles" : [ "style" ]
-			}],
+			"detailTitle" : { "key" : "defaultProcess.title"},
+			"templateName" : "template",
+			"styles" : [ "style" ],
 			"acknowledgementAllowed": true
+		},
+		"messageState2" : {
+			"detailTitle" : { "key" : "defaultProcess.title"},
+			"templateName" : "template",
+			"styles" : [ "style" ],
+			"acknowledgementAllowed": true
+			
 		}
 	}
 }

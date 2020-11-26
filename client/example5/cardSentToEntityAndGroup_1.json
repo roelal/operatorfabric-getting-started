@@ -5,13 +5,10 @@
 	"process"  :"defaultProcess",
 	"processInstanceId" : "cardExample5_1",
 	"state": "messageState2",
-	"recipient" : {
-		"type" : "GROUP",
-		"identity" : "TSO1"
-	},
+	"groupRecipients": ["Dispatcher"],
 	"severity" : "INFORMATION",
 	"startDate" : 1553186770681,
 	"summary" : {"key" : "defaultProcess.summary"},
 	"title" : {"key" : "defaultProcess.title"},
-	"data" : {"message" : "Hello World !!! Here is a message for ENTITY1 and group TSO1 - process/state not in tso1-operator perimeter "}
+	"data" : {"message" : "Hello World !!! Here is a message for ENTITY1 and group Dispatcher - process/state not in operator1 perimeter "}
 }
