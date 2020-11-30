@@ -4,10 +4,7 @@
 	"process"  :"maintenanceProcess",
 	"processInstanceId" : "maintenance-2",
 	"state": "planned",
-	"recipient" : {
-				"type" : "GROUP",
-				"identity" : "TSO1"
-			},
+	"groupRecipients": ["Dispatcher"],
 	"severity" : "ALARM",
 	"startDate" : 1553186770681,
 	"summary" : {"key" : "maintenanceProcess.summary"},
@@ -21,7 +18,7 @@
 		"comment":"Operation will stop production of the Power Plant"
 		},
 	"timeSpans" : [
-        {"start" : 1576101659000},
-        {"start" :  1576220459000}
+        {"start" : 1606403370910},
+        {"start" :  1606406987125}
     	]
 }

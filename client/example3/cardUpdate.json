@@ -3,10 +3,7 @@
 	"processVersion" : "1",
 	"process"  :"criticalSituation",
 	"processInstanceId" : "alert1",
-	"recipient" : {
-				"type" : "GROUP",
-				"identity" : "TSO1"
-			},
+	"groupRecipients": ["Dispatcher"],
 	"state" : "criticalSituation-update",
 	"severity" : "ALARM",
 	"startDate" : 1553186770681,

@@ -4,12 +4,9 @@
 	"processVersion" : "1",
 	"process"  :"criticalSituation",
 	"processInstanceId" : "alert1",
-	"recipient" : {
-				"type" : "GROUP",
-				"identity" : "TSO1"
-			},
+	"groupRecipients": ["Dispatcher"],
 	"state" : "criticalSituation-end",
-	"severity" : "INFORMATION",
+	"severity" : "COMPLIANT",
 	"startDate" : 1553186770681,
 	"summary" : {
 		"key" : "criticalSituation-end.summary"

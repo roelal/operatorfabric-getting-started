@@ -1,15 +1,11 @@
 {
 	"id":"maintenanceProcess",
 	"version":"1",
-	"templates":["template"],
-	"csses":["style"],
 	"states":{
 		"planned" : {
-			"details" : [{
-				"title" : { "key" : "maintenanceProcess.title"},
-				"templateName" : "template",
-				"styles" : [ "style" ]
-			}],
+			"detailTitle" : { "key" : "maintenanceProcess.title"},
+			"templateName" : "template",
+			"styles" : [ "style" ],
 			"acknowledgementAllowed": true
 		}
 	}
