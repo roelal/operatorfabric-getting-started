@@ -16,6 +16,7 @@ spring:
 #  kafka:
 #    consumer:
 #      group-id: opfab-command
+#    bootstrap-servers: 172.17.0.1:9092
 
 opfab:
   kafka:
@@ -34,7 +35,8 @@ users:
     listOfServers: users:8080
 
 externalRecipients-url: "{\
-          externalRecipient: \"http://ext-app:8090/test\" \
+          externalRecipient: \"http://ext-app:8090/test\", \
+          externalKafkaRecipient: \"kafka:\" \
           }"
 
 # WARNING : If you set this parameter to false , all users have the rights to respond to all cards
